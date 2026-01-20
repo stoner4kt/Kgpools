@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KG Pools - Premium Swimming Pool Design & Construction</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <h1><span class="logo-kg">KG</span> <span class="logo-pools">POOLS</span></h1>
+                </a>
+                
+                <div class="hamburger-menu" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item cta-btn-nav"><a href="#contact" class="btn btn-primary">Get Free Quote</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Transform Your Backyard Into a <span class="highlight">Luxurious Oasis</span></h1>
+                <p class="hero-subtitle">Premium swimming pool design, construction, and maintenance services with over 15 years of excellence in creating dream backyard retreats.</p>
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-primary btn-large">View Our Work</a>
+                    <a href="#contact" class="btn btn-secondary btn-large">Schedule Consultation</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>250+</h3>
+                        <p>Pools Built</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>15+</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>100%</h3>
+                        <p>Client Satisfaction</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="pool-image-main" id="poolImage"></div>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Premium Services</h2>
+                <p class="section-subtitle">From custom design to ongoing maintenance, we provide comprehensive pool solutions.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-pencil-ruler"></i>
+                    </div>
+                    <h3>Custom Pool Design</h3>
+                    <p>Tailored designs that match your vision, lifestyle, and property specifications. We create unique pools that become the centerpiece of your outdoor space.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-trowel"></i>
+                    </div>
+                    <h3>Professional Construction</h3>
+                    <p>Expert installation using premium materials and proven techniques. We ensure structural integrity and flawless execution of every project.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Pool Renovation</h3>
+                    <p>Breathe new life into your existing pool with our remodeling services. Updates, repairs, and modernizations to transform your tired pool.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Maintenance & Care</h3>
+                    <p>Comprehensive maintenance plans to keep your pool in pristine condition year-round. Crystal clear water and optimal performance guaranteed.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Recent Projects</h2>
+                <p class="section-subtitle">Explore our gallery of completed luxury pool installations</p>
+            </div>
+            
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="luxury">Luxury Pools</button>
+                <button class="filter-btn" data-filter="family">Family Pools</button>
+                <button class="filter-btn" data-filter="infinity">Infinity Edge</button>
+                <button class="filter-btn" data-filter="renovation">Renovations</button>
+            </div>
+            
+            <div class="portfolio-grid">
+                <!-- Portfolio items will be populated by JavaScript -->
+            </div>
+            
+            <div class="portfolio-cta">
+                <p>Want to see more of our work? We have an extensive portfolio of completed projects.</p>
+                <a href="#contact" class="btn btn-primary">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Why Choose KG Pools</h2>
+                    <p>With over 15 years of experience in the pool industry, we've established ourselves as leaders in custom pool design and construction. Our commitment to quality, innovation, and customer satisfaction sets us apart.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Licensed & Insured</h4>
+                                <p>Fully licensed, bonded, and insured for your peace of mind.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Premium Materials</h4>
+                                <p>We use only the highest quality materials from trusted suppliers.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Timely Completion</h4>
+                                <p>We respect your time and complete projects on schedule.</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Warranty Protected</h4>
+                                <p>Comprehensive warranty on all our workmanship and materials.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="btn btn-primary">Schedule Your Free Consultation</a>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="about-img" id="aboutImage"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Ready to Start Your Project?</h2>
+                <p class="section-subtitle">Contact us today for a free, no-obligation consultation and quote</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Call Us</h3>
+                        <p>(555) 123-4567</p>
+                        <p>Mon-Fri: 8am-6pm</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>info@kgpools.com</p>
+                        <p>Response within 24 hours</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>123 Poolside Ave</p>
+                        <p>Waterford, CA 95386</p>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="service" required>
+                                <option value="" disabled selected>Select Service</option>
+                                <option value="new-pool">New Pool Construction</option>
+                                <option value="renovation">Pool Renovation</option>
+                                <option value="design">Custom Design</option>
+                                <option value="maintenance">Maintenance Services</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" rows="5" placeholder="Tell us about your project..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Submit Request</button>
+                        <div class="form-notice">
+                            <p><i class="fas fa-shield-alt"></i> Your information is secure and will never be shared with third parties.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3><span class="logo-kg">KG</span> <span class="logo-pools">POOLS</span></h3>
+                    <p>Creating exceptional swimming pool experiences through innovative design, quality construction, and unparalleled customer service since 2008.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Custom Pool Design</a></li>
+                        <li><a href="#services">Pool Construction</a></li>
+                        <li><a href="#services">Pool Renovation</a></li>
+                        <li><a href="#services">Maintenance</a></li>
+                        <li><a href="#services">Water Features</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Poolside Ave, Waterford, CA</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@kgpools.com</li>
+                        <li><i class="fas fa-clock"></i> Mon-Fri: 8am-6pm</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> KG Pools. All rights reserved. | <a href="privacy-policy.html">Privacy Policy</a></p>
+                <p>License #: C53-1234567 | Fully Insured</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Portfolio Images -->
+    <div class="modal" id="portfolioModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <img id="modalImage" src="" alt="Pool Project">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
